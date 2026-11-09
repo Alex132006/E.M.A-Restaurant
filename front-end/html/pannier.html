@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon panier | E.M.A Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="../img/logo_ema.png">
+    <link rel="stylesheet" href="../css/pannier.css">
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu-panel" id="menuPanel">
+                <a href="/index.html">Accueil</a>
+                <a href="/front-end/html/menu.html">Notre menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-brand">
+                <h3 class="brand-name">EMA & Restaurant</h3>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a>Restaurant</p></a></li>
+            </ul>
+    </nav>
+
+    <!-- CONTENU DU PANIER -->
+    <main class="cart-container">
+
+        <section class="cart-products">
+
+            <div class="cart-title">
+                <h2>Votre commande</h2>
+
+                <button id="clear-cart" class="clear-cart">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <!-- Vider le panier -->
+                </button>
+            </div>
+
+
+            <!-- ARTICLES AJOUTÉS PAR JAVASCRIPT -->
+            <div id="cart-items">
+                <div class="empty-cart">
+
+                    <i class="fa-solid fa-basket-shopping"></i>
+
+                    <h3>Votre panier est vide</h3>
+
+                    <a href="menu.html" class="discover-btn">
+                        Découvrir notre menu
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- RÉCAPITULATIF -->
+        <aside class="cart-summary">
+            <!-- <h2>Récapitulatif</h2> -->
+
+            <div class="summary-line">
+                <span>Sous-total</span>
+                <strong id="subtotal">0 FCFA</strong>
+            </div>
+
+            <!-- <div class="summary-line">
+                <span>Livraison</span>
+                <strong id="delivery-fee">0 FCFA</strong>
+            </div> -->
+
+            <div class="summary-divider"></div>
+            <div class="total-line">
+                <span>Total à payer</span>
+                <strong id="total">0 FCFA</strong>
+            </div>
+
+            <p class="delivery-info">
+                <i class="fa-solid fa-truck-fast"></i>
+                Les frais de livraison seront confirmés selon votre adresse.
+            </p>
+
+            <button id="checkout-btn" class="checkout-btn">
+                Commander
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <a href="menu.html" class="continue-shopping">
+                <i class="fa-solid fa-arrow-left"></i>
+                Continuer
+            </a>
+
+            <div class="secure-payment">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Commande sécurisée</span>
+            </div>
+        </aside>
+    </main>
+
+
+    <!-- Footer Luxueux -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <span class="brand-name-footer">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    EMA & Food</span>
+                <p class="footer-tagline">
+                    L'excellence n'est pas un acte, mais une habitude.
+                </p>
+            </div>
+            <div class="footer-links">
+    
+                <div class="link-group">
+                    <h4>Decouvrir EMA</h4>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Notre Histoire</a></li>
+                        <li><a href="#">Notre menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos spécialités</h4>
+                    <ul>
+                        <li><a href="#">Cuisine africaine</a></li>
+                        <li><a href="#">Grillades</a></li>
+                        <li><a href="#">Fast-food</a></li>
+                        <li><a href="#">Patisserie</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Evénements privés</a></li>
+                        <li><a href="#">Commander en ligne</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos contacts</h4>
+                    <ul>
+                        <li><a href="#">215 Rue Ntsampoko, Talangai, Brazzaville, Congo</a></li>
+                        <li><a href="#">+242-06 411 59 79</a></li>
+                        <li><a href="#">essongapea.a.b@gmail.com </a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Privé</h4>
+                <address>
+                    <p>Adresse <br> </p>
+                    <p>+242 06 411 59 80</p>
+                    <p>essongapea.a.b@gmail.com</p>
+                </address>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; notre avantage.</p>
+            <div class="legal-links">
+                <a href="#">Confidentialité</a>
+                <a href="#">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/pannier.js"></script>
+</body>
+
+</html>

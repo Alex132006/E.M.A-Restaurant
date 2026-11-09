@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Choisissez un nouveau mot de passe E.M.A Restaurant Bar.">
+
+    <title>Nouveau mot de passe | E.M.A Restaurant Bar</title>
+
+    <link rel="stylesheet" href="/front-end/css/connect/nouveau-mot-de-passe.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <!-- SECTION GAUCHE -->
+
+        <!-- <section class="auth-image">
+
+            <div class="image-overlay"></div>
+
+            <div class="brand">
+                <span class="brand-logo">E.M.A</span>
+                <span class="brand-subtitle">RESTAURANT BAR</span>
+            </div>
+
+            <div class="image-content">
+
+                <p class="welcome-text">SÉCURITÉ DE VOTRE COMPTE</p>
+
+                <h1>Un nouveau départ<br>en toute sérénité.</h1>
+
+                <p>
+                    Sécurisez votre espace personnel et retrouvez
+                    le plaisir de commander chez E.M.A Restaurant Bar.
+                </p>
+
+            </div>
+
+            <div class="image-footer">
+                © 2026 E.M.A Restaurant Bar
+            </div>
+
+        </section> -->
+
+        <!-- SECTION FORMULAIRE -->
+
+        <section class="auth-form-container">
+
+            <div class="form-wrapper">
+
+                <!-- <a href="connexion.html" class="back-home">
+                    ← Retour à la connexion
+                </a> -->
+
+                <!-- <div class="form-icon">
+                    <span>♧</span>
+                </div> -->
+
+                <div class="form-header">
+
+                    <span class="small-title">RÉINITIALISATION SÉCURISÉE</span>
+
+                    <h2>Nouveau mot de passe</h2>
+
+                    <p>
+                        Choisissez un nouveau mot de passe pour
+                        protéger votre compte E.M.A.
+                    </p>
+
+                </div>
+
+                <form id="resetPasswordForm">
+
+                    <!-- NOUVEAU MOT DE PASSE -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Nouveau mot de passe
+                        </label>
+
+                        <div class="password-box">
+
+                            <input type="password" id="password" name="password" placeholder="Minimum 8 caractères"
+                                minlength="8" autocomplete="new-password" required>
+
+                            <button type="button" class="toggle-password" data-target="password">
+                                Afficher
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CONFIRMATION -->
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            Confirmer le nouveau mot de passe
+                        </label>
+
+                        <div class="password-box">
+
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                                placeholder="Répétez votre mot de passe" autocomplete="new-password" required>
+
+                            <button type="button" class="toggle-password" data-target="confirmPassword">
+                                Afficher
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- INDICATIONS DE SÉCURITÉ -->
+
+                    <div class="password-info">
+
+                        <p>Votre mot de passe doit contenir :</p>
+
+                        <ul>
+                            <li id="lengthRule">Au moins 8 caractères</li>
+                            <li id="letterRule">Au moins une lettre</li>
+                            <li id="numberRule">Au moins un chiffre</li>
+                        </ul>
+
+                    </div>
+
+                    <!-- MESSAGE -->
+
+                    <p id="message" class="message" aria-live="polite"></p>
+
+                    <!-- BOUTON -->
+
+                    <button type="submit" class="reset-button">
+                        MODIFIER MON MOT DE PASSE
+                    </button>
+
+                </form>
+
+                <div class="bottom-link">
+
+                    Vous avez retrouvé votre accès ?
+
+                    <a href="../connexion/conexion.html">
+                        Se connecter
+                    </a>
+
+                </div>
+
+                <div class="secure-text">
+                    E.M.A RESTAURANT BAR — BRAZZAVILLE
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="/front-end/js/mot-de-passe/nouveau-mot-de-passe.js"></script>
+
+</body>
+
+</html>

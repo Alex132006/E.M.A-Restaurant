@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Réservation | E.M.A Restaurant</title>
+    <meta name="description" content="Réservez votre table chez E.M.A Restaurant à Brazzaville. Choisissez votre date, votre heure et le nombre de personnes.">
+
+    <link rel="stylesheet" href="/front-end/css/reservation.css">
+    <link rel="stylesheet" href="/front-end/css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="/index.html" class="logo">
+            <span class="logo-name">E.M.A</span>
+            <span class="logo-subtitle">RESTAURANT</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">Notre histoire</a>
+            <a href="menu.html">Notre menu</a>
+            <a href="reservation.html" class="active">Réservation</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <a href="reservation.html" class="header-btn">
+            Réserver une table
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="reservation-hero">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="section-label">
+                    VOTRE MOMENT CHEZ E.M.A
+                </span>
+
+                <h1>
+                    Réservez votre<br>
+                    <span>table.</span>
+                </h1>
+
+                <p>
+                    Nous serons ravis de vous accueillir.
+                    Préparez votre prochaine expérience culinaire
+                    en quelques instants.
+                </p>
+
+                <div class="breadcrumb">
+
+                    <a href="/index.html">Accueil</a>
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                    <span>Réservation</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORMULAIRE DE RESERVATION -->
+
+        <section class="reservation-section">
+
+            <div class="reservation-container">
+
+                <!-- FORMULAIRE -->
+
+                <div class="reservation-form-container">
+
+                    <div class="form-heading">
+
+                        <span class="section-label">
+                            RÉSERVATION EN LIGNE
+                        </span>
+
+                        <h2>
+                            Planifiez votre visite
+                        </h2>
+
+                        <p>
+                            Complétez les informations ci-dessous.
+                        </p>
+
+                    </div>
+
+
+                    <form class="reservation-form" id="reservation-form">
+
+                        <!-- DATE ET HEURE -->
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="date">
+                                    Date de réservation *
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    <input
+                                        type="date"
+                                        id="date"
+                                        name="date"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="heure">
+                                    Heure souhaitée *
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-regular fa-clock"></i>
+
+                                    <select id="heure" name="heure" required>
+
+                                        <option value="">Choisir une heure</option>
+
+                                        <option value="11:00">11:00</option>
+                                        <option value="11:30">11:30</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="12:30">12:30</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="13:30">13:30</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="14:30">14:30</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="17:30">17:30</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- NOMBRE DE PERSONNES -->
+
+                        <div class="form-group">
+
+                            <label for="personnes">
+                                Nombre de personnes *
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-users"></i>
+
+                                <select id="personnes" name="personnes" required>
+
+                                    <option value="">Nombre de personnes</option>
+
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8 personnes</option>
+                                    <option value="9">9 personnes</option>
+                                    <option value="10">10 personnes</option>
+                                    <option value="Plus de 10">Plus de 10 personnes</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- INFORMATIONS CLIENT -->
+
+                        <div class="form-divider">
+                            <span>VOS COORDONNÉES</span>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="nom">
+                                Nom complet *
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="nom"
+                                    name="nom"
+                                    placeholder="Votre nom complet"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="telephone">
+                                    Téléphone *
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-solid fa-phone"></i>
+
+                                    <input
+                                        type="tel"
+                                        id="telephone"
+                                        name="telephone"
+                                        placeholder="+242 06 XXX XX XX"
+                                        autocomplete="tel"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Adresse e-mail
+                                </label>
+
+                                <div class="input-icon">
+
+                                    <i class="fa-regular fa-envelope"></i>
+
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="exemple@email.com"
+                                        autocomplete="email"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- OCCASION -->
+
+                        <div class="form-group">
+
+                            <label for="occasion">
+                                Occasion particulière
+                            </label>
+
+                            <div class="input-icon">
+
+                                <i class="fa-solid fa-gift"></i>
+
+                                <select id="occasion" name="occasion">
+
+                                    <option value="">Choisir une occasion</option>
+
+                                    <option value="Repas en famille">Repas en famille</option>
+
+                                    <option value="Anniversaire">Anniversaire</option>
+
+                                    <option value="Diner romantique">Dîner romantique</option>
+
+                                    <option value="Rendez-vous professionnel">Rendez-vous professionnel</option>
+
+                                    <option value="Entre amis">Sortie entre amis</option>
+
+                                    <option value="Autre">Autre</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DEMANDES SPECIALES -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Demandes particulières
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="4"
+                                placeholder="Précisez vos besoins ou demandes particulières..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- CONDITIONS -->
+
+                        <div class="form-checkbox">
+
+                            <input
+                                type="checkbox"
+                                id="conditions"
+                                name="conditions"
+                                required
+                            >
+
+                            <label for="conditions">
+                                Je confirme l'exactitude des informations fournies.
+                            </label>
+
+                        </div>
+
+
+                        <!-- BOUTON -->
+
+                        <button type="submit" class="submit-btn">
+
+                            Confirmer ma demande
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="form-footer">
+                            <i class="fa-solid fa-lock"></i>
+                            Vos informations sont utilisées pour traiter
+                            votre demande de réservation.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- INFORMATIONS -->
+            
+            <div class="reservation-info">
+            
+                <span class="section-label">
+                    L'EXPÉRIENCE E.M.A
+                </span>
+            
+                <h2>
+                    Votre table<br>
+                    vous <span>attend.</span>
+                </h2>
+            
+                <p>
+                    Que ce soit pour un déjeuner, un dîner,
+                    un rendez-vous professionnel ou une occasion
+                    spéciale, notre équipe sera heureuse de vous recevoir.
+                </p>
+            
+            
+                <div class="info-item">
+            
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+            
+                    <div>
+                        <h3>Notre adresse</h3>
+            
+                        <p>
+                            215 Rue Ntsampoko,<br>
+                            Talangaï, Brazzaville.
+                        </p>
+                    </div>
+            
+                </div>
+            
+            
+                <div class="info-item">
+            
+                    <div class="info-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+            
+                    <div>
+                        <h3>Nos horaires</h3>
+            
+                        <p>
+                            Consultez nos horaires<br>
+                            auprès de notre équipe.
+                        </p>
+                    </div>
+            
+                </div>
+            
+            
+                <div class="info-item">
+            
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+            
+                    <div>
+                        <h3>Besoin d'aide ?</h3>
+            
+                        <p>
+                            Notre équipe reste disponible
+                            pour vous accompagner.
+                        </p>
+                    </div>
+            
+                </div>
+            
+            
+                <div class="reservation-note">
+            
+                    <i class="fa-solid fa-circle-info"></i>
+            
+                    <p>
+                        Votre demande sera soumise à confirmation
+                        par notre équipe.
+                    </p>
+            
+                </div>
+            
+            </div>
+
+        </section>
+
+
+        <!-- RESERVATION EVENEMENT -->
+
+        <section class="event-banner">
+
+            <div class="event-overlay"></div>
+
+            <div class="event-content">
+
+                <span class="section-label">
+                    UN ÉVÉNEMENT À ORGANISER ?
+                </span>
+
+                <h2>
+                    Célébrez vos moments<br>
+                    <span>importants chez E.M.A.</span>
+                </h2>
+
+                <p>
+                    Anniversaire, réception, réunion ou événement privé,
+                    découvrez nos possibilités de location de salle.
+                </p>
+
+                <a href="contact.html" class="event-btn">
+                    Nous contacter
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Luxueux -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <span class="brand-name-footer">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    EMA & Food</span>
+                <p class="footer-tagline">
+                    L'excellence n'est pas un acte, mais une habitude.
+                </p>
+            </div>
+            <div class="footer-links">
+    
+                <div class="link-group">
+                    <h4>Decouvrir EMA</h4>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Notre Histoire</a></li>
+                        <li><a href="#">Notre menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos spécialités</h4>
+                    <ul>
+                        <li><a href="#">Cuisine africaine</a></li>
+                        <li><a href="#">Grillades</a></li>
+                        <li><a href="#">Fast-food</a></li>
+                        <li><a href="#">Patisserie</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos services</h4>
+                    <ul>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Evénements privés</a></li>
+                        <li><a href="#">Commander en ligne</a></li>
+                    </ul>
+                </div>
+    
+                <div class="link-group">
+                    <h4>Nos contacts</h4>
+                    <ul>
+                        <li><a href="#">215 Rue Ntsampoko, Talangai, Brazzaville, Congo</a></li>
+                        <li><a href="#">+242-06 411 59 79</a></li>
+                        <li><a href="#">essongapea.a.b@gmail.com </a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Privé</h4>
+                <address>
+                    <p>Adresse <br> </p>
+                    <p>+242 06 411 59 80</p>
+                    <p>essongapea.a.b@gmail.com</p>
+                </address>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; notre avantage.</p>
+            <div class="legal-links">
+                <a href="#">Confidentialité</a>
+                <a href="#">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/reservation.js"></script>
+
+</body>
+
+</html>

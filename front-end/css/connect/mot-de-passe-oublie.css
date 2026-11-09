@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8f6f2;
+    color: #222;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* SECTION IMAGE */
+
+.auth-image {
+    position: relative;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+        url("../../img/restaurant.jpg") center/cover no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 55px;
+    color: white;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(80,52,30,0.25),
+        transparent
+    );
+}
+
+.brand,
+.image-content,
+.image-footer {
+    position: relative;
+    z-index: 1;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.brand-subtitle {
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.image-content {
+    max-width: 480px;
+}
+
+.welcome-text,
+.small-title {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #c5a47e;
+    font-weight: 600;
+}
+
+.image-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.image-content p:last-child {
+    color: #e1ded9;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.image-footer {
+    font-size: 11px;
+    color: #ccc;
+}
+
+
+/* SECTION FORMULAIRE */
+
+.auth-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 25px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+.back-home {
+    display: inline-block;
+    color: #777;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 45px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    color: #a17a51;
+}
+
+
+/* ICONE */
+
+.form-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eee7dd;
+    border-radius: 50%;
+
+    margin-bottom: 25px;
+}
+
+.form-icon span {
+    font-size: 27px;
+    color: #98734d;
+}
+
+
+/* TITRE */
+
+.form-header {
+    margin-bottom: 35px;
+}
+
+.form-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    margin: 12px 0;
+    color: #29231e;
+}
+
+.form-header p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+
+/* CHAMPS */
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    height: 52px;
+
+    border: 1px solid #e5e0d8;
+    background: #fff;
+
+    padding: 0 15px;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #a17a51;
+    box-shadow: 0 0 0 3px rgba(161,122,81,0.08);
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+
+/* MESSAGE */
+
+.message {
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.message.error {
+    color: #c0392b;
+}
+
+.message.success {
+    color: #218838;
+}
+
+
+/* BOUTON */
+
+.reset-button {
+    width: 100%;
+    height: 54px;
+
+    background: #29231e;
+    color: white;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-button:hover {
+    background: #98734d;
+}
+
+.reset-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* LIEN */
+
+.bottom-link {
+    text-align: center;
+    margin-top: 30px;
+
+    font-size: 12px;
+    line-height: 1.8;
+    color: #888;
+}
+
+.bottom-link a {
+    color: #98734d;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.bottom-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* PIED DE PAGE */
+
+.secure-text {
+    text-align: center;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    color: #aaa;
+    margin-top: 55px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .auth-container {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-image {
+        min-height: 300px;
+        padding: 35px;
+    }
+
+    .image-content {
+        margin: 50px 0 20px;
+    }
+
+    .image-content h1 {
+        font-size: 40px;
+    }
+
+    .auth-form-container {
+        padding: 45px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .auth-image {
+        min-height: 260px;
+        padding: 25px;
+    }
+
+    .brand-logo {
+        font-size: 35px;
+    }
+
+    .image-content h1 {
+        font-size: 33px;
+    }
+
+    .form-header h2 {
+        font-size: 29px;
+    }
+
+    .secure-text {
+        margin-top: 40px;
+    }
+}
