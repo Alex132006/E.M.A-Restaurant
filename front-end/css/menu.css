@@ -156,7 +156,7 @@ nav {
 
 .fa-truck-fast,
 .brand-symbol {
-  font-size: 1rem;
+  font-size: 4rem;
   color: var(--color-gold);
 }
 
@@ -218,7 +218,7 @@ nav {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }

@@ -1,0 +1,1082 @@
+/* =====================================================
+   RESPONSIVE GLOBAL — E.M.A RESTAURANT BAR
+   Mobile / Tablette / Ordinateur
+===================================================== */
+
+/* BASE RESPONSIVE */
+html {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+.container,
+.container-sold,
+.pub-carousel-section,
+.gallery,
+.main-footer,
+.prestige-container {
+  width: 100%;
+}
+
+/* =====================================================
+   PETITS MOBILES : 320px à 480px
+===================================================== */
+
+@media screen and (max-width: 480px) {
+
+  /* NAVIGATION */
+  .nav-container {
+    padding: 10px 12px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-brand {
+    gap: 8px;
+  }
+
+  .brand-symbol,
+  .fa-truck-fast {
+    font-size: 2rem;
+  }
+
+  .brand-name {
+    font-size: 14px;
+    top: 0;
+  }
+
+  .nav-menu {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 5px;
+  }
+
+  .nav-menu a {
+    font-size: 12px;
+  }
+
+  .nav-actions {
+    position: static;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .search-btn {
+    width: min(220px, 100%);
+  }
+
+  .appointment-btn,
+  .appoint-btn {
+    font-size: 12px;
+  }
+
+  .menu-toggle {
+    padding: 12px;
+  }
+
+  .menu-panel {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    width: min(260px, calc(100vw - 20px));
+  }
+
+  /* ANCIEN HEADER CASTELLO */
+  .container-haut {
+    height: 100px;
+  }
+
+  .nom-castello,
+  .nom-castello h2 {
+    font-size: 16px;
+  }
+
+  .logo-castello {
+    width: 35px;
+    height: 35px;
+  }
+
+  .heure {
+    font-size: 11px;
+  }
+
+  .events-menu {
+    top: 70px;
+    right: 10px;
+    width: 65px;
+    height: 23px;
+    font-size: 10px;
+  }
+
+  .events-menu-a {
+    top: 48px;
+    right: 20px;
+    width: 60px;
+    height: 22px;
+    font-size: 10px;
+  }
+
+  .signal {
+    top: 40px;
+    right: 60px;
+    width: 12px;
+    height: 12px;
+    font-size: 9px;
+  }
+
+  /* HERO */
+  .hero-section {
+    height: 75vh;
+    min-height: 480px;
+    max-height: 700px;
+  }
+
+  .slide-cont {
+    padding: 0 18px;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 9vw, 3rem);
+    margin-bottom: 15px;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 15px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .hero-controls {
+    bottom: 25px;
+    padding: 0 15px;
+  }
+
+  .slide-indicators {
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+
+  .nav-button {
+    width: 38px;
+    height: 38px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* TITRES */
+  .category-title,
+  .category-promo {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .section-header {
+    left: 0;
+    text-align: center;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+  /* CARROUSEL */
+  .pub-carousel-section {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .pub-carousel-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 12px;
+  }
+
+  .carousel-slide {
+    flex: 0 0 230px;
+    height: 160px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slide-content {
+    padding: 10px;
+  }
+
+  /* MENU */
+  .container {
+    padding: 15px 10px;
+  }
+
+  .container-sold {
+    padding: 15px 10px;
+    border-radius: 12px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .menu-item {
+    top: 0;
+    padding: 8px;
+    min-width: 0;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+  }
+
+  .item-title,
+  .item-title-1 {
+    font-size: 12px;
+    top: 5px;
+    line-height: 1.4;
+  }
+
+  .favorite-btn {
+    top: 12px;
+    left: 12px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .somme {
+    top: 0;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .fa-wallet,
+  .montant {
+    font-size: 11px;
+  }
+
+  .new,
+  .new-slide {
+    width: 48px;
+    height: 19px;
+    font-size: 9px;
+  }
+
+  .add-to-cart-btn {
+    position: absolute;
+    top: auto;
+    right: 8px;
+    bottom: 8px;
+    width: 32px;
+    height: 28px;
+    margin-top: 0;
+  }
+
+  /* GALERIE */
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding: 10px;
+    margin: 35px auto;
+  }
+
+  .gallery-item img {
+    height: 140px;
+  }
+
+  /* PANIER */
+  .cart-button {
+    bottom: 18px;
+    right: 15px;
+  }
+
+  .cart-toggle {
+    width: 52px;
+    height: 52px;
+    font-size: 1.1rem;
+  }
+
+  #cart-count {
+    width: 19px;
+    height: 19px;
+    font-size: 0.65rem;
+    top: -5px;
+    right: -5px;
+  }
+
+  /* MODALES */
+  .modal {
+    padding: 10px;
+  }
+
+  .modal-content {
+    width: 95%;
+    max-width: 100%;
+    margin: 15% auto;
+    padding: 18px 12px;
+    border-radius: 15px;
+  }
+
+  .close-btn {
+    top: 10px;
+    right: 10px;
+    width: 27px;
+    height: 27px;
+    font-size: 25px;
+  }
+
+  /* MODALE PRODUIT */
+  .product-modal .modal-content {
+    width: 96%;
+    max-width: 100%;
+    max-height: 90vh;
+    margin: 5% auto;
+    padding: 15px 10px;
+  }
+
+  .product-details {
+    gap: 15px;
+    padding: 10px 0;
+  }
+
+  .product-image {
+    max-height: 240px;
+  }
+
+  .product-image img {
+    height: 210px;
+    object-fit: cover;
+  }
+
+  .product-info {
+    padding: 0 5px;
+  }
+
+  .product-price {
+    top: -45px;
+    left: 10px;
+    font-size: 16px;
+  }
+
+  .add-to-cart-modal {
+    top: -45px;
+    right: 10px;
+  }
+
+  .product-description {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .related-products {
+    margin-top: 15px;
+  }
+
+  .related-products-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    max-height: 250px;
+    padding: 5px;
+  }
+
+  .related-product-item {
+    padding: 8px;
+    min-height: 120px;
+  }
+
+  .related-product-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* PRESTIGE */
+  .prestige-section {
+    padding: 40px 15px;
+  }
+
+  .prestige-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 10px;
+  }
+
+  .prestige-number {
+    font-size: 2rem;
+  }
+
+  .prestige-label {
+    font-size: 0.7rem;
+  }
+
+  /* FOOTER CLASSIQUE */
+  footer {
+    padding: 0;
+  }
+
+  .castello-footer {
+    margin: 0;
+    padding: 30px 15px 15px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-column {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-column h1 {
+    font-size: 17px;
+  }
+
+  .footer-column ul li a {
+    font-size: 13px;
+  }
+
+  .stats-section {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 15px;
+  }
+
+  .stat-item {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .stat-value {
+    font-size: 20px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .company-info {
+    font-size: 11px;
+  }
+
+  /* FOOTER PRINCIPAL */
+  .main-footer {
+    padding: 35px 15px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .link-group h4,
+  .footer-contact h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+
+  .legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .container-contenu {
+    width: 95%;
+    margin: 40px auto 15px;
+  }
+
+  .dan {
+    max-width: 100%;
+    padding: 8px 12px;
+  }
+}
+
+
+/* =====================================================
+   TABLETTES : 481px à 767px
+===================================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  .nav-container {
+    padding: 12px 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+  .nav-actions {
+    position: static;
+    gap: 12px;
+  }
+
+  .search-btn {
+    width: 200px;
+  }
+
+  .brand-name {
+    top: 0;
+    font-size: 16px;
+  }
+
+  /* HERO */
+  .hero-section {
+    height: 75vh;
+    min-height: 550px;
+  }
+
+  .slide-cont {
+    padding: 0 35px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 7vw, 4.5rem);
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    max-width: 450px;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    padding: 15px 20px;
+  }
+
+  /* MENU */
+  .container {
+    padding: 20px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .menu-item {
+    top: 0;
+    padding: 12px;
+  }
+
+  .menu-item img {
+    height: 160px;
+    object-fit: cover;
+  }
+
+  .item-title {
+    font-size: 14px;
+  }
+
+  .category-title {
+    font-size: 24px;
+  }
+
+  /* CARROUSEL */
+  .pub-carousel-section {
+    padding: 0 20px;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 15px;
+  }
+
+  .carousel-slide {
+    flex: 0 0 260px;
+    height: 180px;
+  }
+
+  /* GALERIE */
+  .gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin: 60px auto;
+  }
+
+  .gallery-item img {
+    height: 170px;
+  }
+
+  /* PANIER */
+  .cart-button {
+    bottom: 25px;
+    right: 20px;
+  }
+
+  .cart-toggle {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* MODALES */
+  .modal-content {
+    width: 85%;
+    max-width: 650px;
+    margin: 10% auto;
+    padding: 25px;
+  }
+
+  .product-modal .modal-content {
+    width: 90%;
+    max-width: 700px;
+  }
+
+  .product-image img {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .related-products-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* PRESTIGE */
+  .prestige-section {
+    padding: 50px 25px;
+  }
+
+  .prestige-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  /* FOOTER */
+  .castello-footer {
+    margin: 0;
+    padding: 35px 25px 20px;
+  }
+
+  .footer-top {
+    gap: 20px;
+  }
+
+  .footer-column {
+    min-width: 40%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+
+/* =====================================================
+   TABLETTES PAYSAGE ET PETITS ORDINATEURS : 768px à 1023px
+===================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .nav-container {
+    padding: 12px 25px;
+    gap: 20px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+  }
+
+  .nav-menu a {
+    font-size: 13px;
+  }
+
+  .nav-actions {
+    position: static;
+    gap: 12px;
+  }
+
+  .search-btn {
+    width: 180px;
+  }
+
+  /* HERO */
+  .hero-section {
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  .slide-cont {
+    padding: 0 45px;
+  }
+
+  .hero-title {
+    font-size: clamp(3.5rem, 6vw, 5rem);
+  }
+
+  /* MENU */
+  .container {
+    padding: 25px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .menu-item {
+    top: 0;
+    padding: 12px;
+  }
+
+  .menu-item img {
+    height: 170px;
+    object-fit: cover;
+  }
+
+  /* CARROUSEL */
+  .carousel-track {
+    display: flex;
+    gap: 18px;
+  }
+
+  .carousel-slide {
+    flex: 0 0 280px;
+    height: 190px;
+  }
+
+  /* GALERIE */
+  .gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin: 70px auto;
+  }
+
+  /* PANIER */
+  .cart-button {
+    bottom: 30px;
+    right: 25px;
+  }
+
+  .cart-toggle {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* MODALES */
+  .modal-content {
+    width: 75%;
+    max-width: 750px;
+  }
+
+  .product-modal .modal-content {
+    width: 90%;
+    max-width: 850px;
+  }
+
+  .product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .product-image img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .related-products-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* PRESTIGE */
+  .prestige-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =====================================================
+   ORDINATEURS : 1024px à 1439px
+===================================================== */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+  .nav-container {
+    max-width: 1300px;
+    padding: 15px 35px;
+  }
+
+  .nav-menu {
+    gap: 25px;
+  }
+
+  .nav-actions {
+    position: static;
+    gap: 18px;
+  }
+
+  .hero-section {
+    height: 90vh;
+    min-height: 650px;
+  }
+
+  .slide-cont {
+    padding: 0 60px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .menu-item {
+    top: 0;
+    padding: 15px;
+  }
+
+  .menu-item img {
+    height: 190px;
+    object-fit: cover;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+  }
+
+  .carousel-slide {
+    flex: 0 0 300px;
+    height: 210px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 1300px;
+  }
+
+  .product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .footer-container {
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 35px;
+  }
+}
+
+
+/* =====================================================
+   GRANDS ÉCRANS : 1440px et plus
+===================================================== */
+
+@media screen and (min-width: 1440px) {
+
+  .nav-container,
+  .content-wrapper,
+  .footer-container {
+    max-width: 1500px;
+  }
+
+  .hero-section {
+    height: 90vh;
+    min-height: 750px;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .menu-item {
+    top: 0;
+    padding: 18px;
+  }
+
+  .menu-item img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .gallery {
+    max-width: 1500px;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+
+/* =====================================================
+   CORRECTIONS COMMUNES À TOUS LES ÉCRANS
+===================================================== */
+
+/* Évite les débordements des éléments de navigation */
+.nav-container {
+  top: 0;
+}
+
+/* Couleur du lien au survol */
+.nav-menu a:hover {
+  color: var(--color-charcoal);
+}
+
+/* Les images occupent correctement leur espace */
+.slide-background img {
+  object-fit: cover;
+}
+
+/* Les images du menu */
+.menu-item img {
+  display: block;
+  width: 100%;
+}
+
+/* Le menu utilise un véritable conteneur flex */
+.carousel-track {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Les éléments du menu ne sont plus décalés artificiellement */
+.menu-item {
+  position: relative;
+  top: 0;
+}
+
+/* Bouton d'ajout au panier */
+.menu-item .add-to-cart-btn {
+  position: absolute;
+}
+
+/* Empêche les éléments de dépasser des cartes */
+.menu-item,
+.carousel-slide,
+.gallery-item,
+.related-product-item {
+  min-width: 0;
+}
+
+/* Transitions moins agressives sur les écrans tactiles */
+@media (hover: none) {
+  .menu-item:hover::before {
+    left: -100%;
+  }
+
+  .carousel-slide img:hover,
+  .related-product-item:hover {
+    transform: none;
+  }
+}
+
+/* Accessibilité : limiter les animations si nécessaire */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
